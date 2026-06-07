@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Button Showcase Styles */
+.button-showcase {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.button-showcase h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* View Toggle Button */
+.view-toggle {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.view-toggle .btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button-showcase h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-group .btn {
+    width: 100%;
+  }
+}
